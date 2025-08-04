@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.wrapper {
+  margin: 0 auto;
+  font-size: 25px;
+  border: 2px solid rgb(255, 174, 187);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: fit-content;
+  min-height: 200px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgb(255, 214, 221);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper .input-wrapper {
+  display: flex; 
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wrapper input {
+  height: 30px;
+  padding-left: 15px;
+  border-radius: 4px;
+  border: 2px solid rgb(178, 141, 221);
+  width: 60%;
+}
+
+.wrapper input:focus {
+  border: 2px solid rgb(116, 66, 172);
+  outline: none;
+}
+
+.wrapper button {
+  background-color: rgb(243, 201, 233);
+  border: 1px solid rgb(169, 111, 111);
+  height: 25px;
+  width: 200px;
+  color: rgb(86, 32, 66);
+  border-radius: 5px;
+}
+
+.wrapper .list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.wrapper .list .delete-task {
+  font-size: 20px;
 }
